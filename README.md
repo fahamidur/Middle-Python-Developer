@@ -3,7 +3,7 @@ This repository contains the tasks provided to me via Email.
 
 Certainly! Here's the text formatted for a GitHub README:
 
-```markdown
+
 # Task 1: MNIST Image Classification
 
 This code is a simple neural network implementation using TensorFlow and Keras to classify handwritten digits from the MNIST dataset.
