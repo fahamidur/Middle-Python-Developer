@@ -80,9 +80,6 @@ Feel free to explore and modify the code for your specific needs!
 
 
 
-
-
-
 # Task 2: SQLite Library Management
 
 This code provides a basic implementation of a library management system using SQLite for storing information about authors and books.
