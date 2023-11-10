@@ -1,7 +1,19 @@
-# Middle-Python-Developer
-This repository contains the tasks provided to me via Email. 
+# Project Documentation
 
-Certainly! Here's the text formatted for a GitHub README:
+## Overview
+
+This project consists of three tasks, each located in its respective folder:
+
+1. **Task 1: MNIST Image Classification**
+   - Task1/mnist_classification.py
+
+2. **Task 2: SQLite Library Management**
+   - Task2/database.ipynb (Jupyter Notebook version)
+
+3. **Task 3: Google Sheets Data Manipulation**
+   - Task3/google_sheets_manipulation.ipynb (Jupyter Notebook version)
+
+The purpose of this documentation is to provide comprehensive information on each task, including installation instructions, usage guidelines, and an overview of the code.
 
 
 # Task 1: MNIST Image Classification
@@ -201,3 +213,200 @@ The output will demonstrate the retrieved, updated, and cleared information from
 
 
 Feel free to explore and modify the codes for your specific needs!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Task 1: MNIST Image Classification
+
+### Installation
+
+Ensure you have TensorFlow installed:
+
+```bash
+pip install tensorflow
+```
+
+### Usage
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/yourrepository.git
+```
+
+2. Navigate to the Task1 directory:
+
+```bash
+cd yourrepository/Task1
+```
+
+3. Run the code:
+
+```bash
+python mnist_classification.py
+```
+
+### Code Overview
+
+- **Load and Preprocess Data:** Load and preprocess the MNIST dataset.
+- **Build Neural Network:** Construct a Convolutional Neural Network (CNN) for image classification.
+- **Compile the Model:** Compile the model with the Adam optimizer, categorical crossentropy loss, and accuracy metric.
+- **Define Callback:** Log training metrics to a CSV file (`mnist_training_log.csv`).
+- **Train the Model:** Train the model on the training data with a validation split of 20%.
+- **Evaluate the Model:** Evaluate the trained model on the test data.
+
+### Output
+
+Test accuracy and loss will be printed at the end of the script execution.
+
+### Additional Notes
+
+- The `mnist_training_log.csv` file contains training metrics for each epoch.
+- Adjust parameters such as epochs, batch size, or model architecture for experimentation.
+
+## Task 2: SQLite Library Management
+
+### Installation
+
+No additional libraries are required. SQLite is included in the Python standard library.
+
+### Usage
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/yourrepository.git
+```
+
+2. Navigate to the Task2 directory:
+
+```bash
+cd yourrepository/Task2
+```
+
+3. Run the code:
+
+```bash
+python library_management.py
+```
+
+### Code Overview
+
+- **Connect to SQLite Database:** Connect to or create an SQLite database and define Authors and Books tables.
+- **Functions for Database Operations:**
+  - `add_author(name, birth_date)`: Adds an author to the Authors table.
+  - `add_book(title, published_date, author_id)`: Adds a book to the Books table.
+  - `get_books_by_author(author_id)`: Retrieves all books by a specific author.
+  - `update_book(book_id, title, published_date)`: Updates book information.
+  - `delete_book(book_id)`: Deletes a book.
+- **Example Usage:** Example of adding an author, adding a book, retrieving books by an author, updating book information, and deleting a book.
+
+### Output
+
+The output will demonstrate example usage, including retrieving and updating book information.
+
+### Additional Notes
+
+- Adapt the code for more complex scenarios or additional features.
+- Ensure proper error handling and validation for a production environment.
+
+## Task 3: Google Sheets Data Manipulation
+
+### Installation
+
+Ensure you have the `gspread` library installed:
+
+```bash
+pip install gspread
+```
+
+### Usage
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/yourrepository.git
+```
+
+2. Navigate to the Task3 directory:
+
+```bash
+cd yourrepository/Task3
+```
+
+3. Place your `service_account.json` file in the Task3 directory.
+
+4. Run the code:
+
+```bash
+python google_sheets_manipulation.py
+```
+
+### Code Overview
+
+- **Open Google Sheet and Retrieve Data:** Open the "myInfo" Google Sheet and retrieve all information.
+- **Update Cells E1 and E2:** Update the content of cells E1 and E2 with new values.
+- **Clear Updated Cells:** Clear the content of cells E1 and E2.
+
+### Output
+
+The output will demonstrate retrieved, updated, and cleared information from the Google Sheet.
+
+### Additional Notes
+
+- Ensure the Google Sheet has the appropriate permissions for the service account.
+- Modify the code for your specific Google Sheet structure and data.
+
+Feel free to explore, modify, and experiment with the provided code for your specific needs!
