@@ -72,8 +72,6 @@ The test accuracy and loss will be printed at the end of the script execution.
 
 - Adjust the number of epochs, batch size, or model architecture to experiment with different configurations.
 
-Feel free to explore and modify the code for your specific needs!
-
 
 
 
@@ -136,4 +134,70 @@ The output will demonstrate the example usage, including retrieving and updating
 
 - The database connection is closed at the end of the script. In larger applications, consider using context managers (`with` statement) for better resource management.
 
-Copy and paste this into your GitHub README file for comprehensive documentation for Task 2.
+
+
+# Task 3: Google Sheets Data Manipulation
+
+This code interacts with a Google Sheet using the `gspread` library to retrieve, update, and clear data.
+
+## Installation
+
+Ensure you have the `gspread` library installed:
+
+```bash
+pip install gspread
+```
+
+You'll also need a `service_account.json` file. Follow the instructions [here](https://docs.gspread.org/en/latest/oauth2.html) to obtain this file.
+
+## Usage
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/yourrepository.git
+```
+
+2. Navigate to the Task3 directory:
+
+```bash
+cd yourrepository/Task3
+```
+
+3. Place your `service_account.json` file in the Task3 directory.
+
+4. Run the code:
+
+
+
+## Code Overview
+
+The code uses the `gspread` library to interact with a Google Sheet named "myInfo." It performs the following operations:
+
+### 1. Open Google Sheet and Retrieve Data
+
+- Opens the "myInfo" Google Sheet using the provided `service_account.json` file.
+- Retrieves all information from the first sheet and prints it.
+
+### 2. Update Cells E1 and E2
+
+- Updates the content of cells E1 and E2 with new values.
+- Retrieves and prints the updated information.
+
+### 3. Clear Updated Cells
+
+- Clears the content of cells E1 and E2.
+- Retrieves and prints the cleared information.
+
+## Output
+
+The output will demonstrate the retrieved, updated, and cleared information from the Google Sheet.
+
+## Additional Notes
+
+- Ensure that the Google Sheet has the appropriate permissions for the service account associated with `service_account.json`.
+
+- Modify the code as needed for your specific Google Sheet structure and data.
+
+
+Feel free to explore and modify the codes for your specific needs!
